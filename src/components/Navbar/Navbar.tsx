@@ -5,7 +5,7 @@ import Image from "next/image";
 import ars_logo from "../../../public/assets/ARS_2_cropped.png";
 import { FaArrowRightLong } from "react-icons/fa6";
 import { useEffect, useState } from "react";
-import { Link } from "react-scroll";
+import Link from "next/link";
 
 export default function Navbar() {
   const [logo, setLogo] = useState(false);
@@ -35,19 +35,11 @@ export default function Navbar() {
         <Image className="image" src={ars_logo} alt="ARS Logo" fill />
       </span>
       <div>
-        <Link to="hero" smooth duration={500}>
-          Home
-        </Link>
-        <Link to="how" smooth duration={500}>
-          Products
-        </Link>
-        <Link to="news" smooth duration={500}>
-          News
-        </Link>
-        <Link to="about" smooth duration={500}>
-          About
-        </Link>
-        <Link to="contact" smooth duration={500}>
+        <Link href="/#home">Home</Link>
+        <Link href="/#products">Products</Link>
+        <Link href="/#news">News</Link>
+        <Link href="/#about">About</Link>
+        <Link href="newcontact">
           Contact <FaArrowRightLong className="btn-arrow" />
         </Link>
       </div>
