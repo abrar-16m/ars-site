@@ -1,0 +1,85 @@
+.Bg{
+    background-color:white;
+    background-image: url("/assets/bg_contactus.jpeg");
+    background-size: cover;
+    background-repeat: no-repeat; /* Prevents the image from repeating */
+    background-attachment: fixed; /* Fixes the background image in place */
+    background-position:center;
+    height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items: center;
+    font-family: "Jura", sans-serif;
+
+}
+
+.container{
+    background-color:black;
+
+    border:5px solid black;
+    width:30%;
+    height:35%; 
+    display:flex;
+    justify-content:center;
+    align-items: center;
+    border-radius: 5px;
+   
+  
+    
+}
+
+@media (max-width: 768px) {
+
+    .bg{
+        background-size: contain;
+    }
+    .container {
+        width: 50%; /* Wider on smaller screens */
+        height: 35%; /* Allow height to adjust based on content */
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        width: 65%; /* Even wider on very small screens */
+        height: 35%; /* Allow height to adjust based on content */
+        padding: 10px; /* Reduce padding */
+        font-size:0.75rem;
+    }
+}
+
+.App{
+    color:white;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items: center;
+    gap:30px;
+
+}
+
+#Project{
+    font-size: 2.5em;
+}
+
+#second{
+
+}
+
+#btn{
+    width:110px;
+    height:30px;
+    border-radius: 5px;
+    color:black;
+    font-family:"Jura", "sans-serif";
+    font-weight: bold;
+ 
+
+}
+
+#btn:hover{
+    background-color:#4c4efd;
+}
+
+
+

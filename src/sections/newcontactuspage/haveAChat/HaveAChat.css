@@ -1,0 +1,179 @@
+.Bgg {
+  background-image: linear-gradient(to right, #1cabe280, #4f5b6680);
+  min-height: 100vh; /* Ensures background covers the content */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 12rem;
+  padding-top:3rem;
+}
+
+.p {
+  font-size: 4rem;
+  font-family: "Jura", sans-serif;
+  text-align: center;
+}
+
+.column {
+  display: flex;
+  flex-direction: row;
+  gap: 70px;
+  font-family: "Jura", sans-serif;
+  width: 50%;
+  padding-bottom:2rem;
+ /* Ensures vertical centering of columns */
+}
+
+
+.left, .right {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+
+  
+}
+
+#message-area {
+  width: 100%; 
+  padding: 10px;
+  border-radius: 4px;
+  border: none;
+  outline: none;
+  resize: vertical; /* Allows users to resize the textarea vertically */
+  box-shadow: 0 0 5px rgba(192, 192, 192, 0.5); /* Same box-shadow as other inputs */
+  font-size: 1rem;
+  height: 100px; /* Initial height of the textarea */
+}
+
+
+
+#input {
+  width: 100%;
+  height: 35px;
+  border-radius: 4px;
+  padding: 10px;
+  border: none;
+  outline: none;
+  box-shadow: 0 0 5px rgba(192, 192, 192, 0.5);
+  
+}
+
+#btn1 {
+  width: 60%;
+  height: 40px;
+  border-radius: 8px;
+  background-color: black;
+  color: white;
+  font-family: "Jura", sans-serif;
+  border: none;
+  outline: none;
+  font-weight: bold;
+}
+
+#btn1:hover {
+  background-color: #4c4efd;
+}
+
+/* Responsive adjustments */
+@media (max-width: 1024px) {
+  .Bgg {
+    gap: 30px;
+    
+  }
+  .p {
+    font-size: 3rem;
+  }
+  .column {
+    width: 80%;
+    gap: 40px;
+  }
+}
+
+@media (max-width: 768px) {
+  .Bgg {
+    gap: 30px;
+   
+    display: flex;
+    padding-top:2.5rem;
+    padding-bottom: 2.5rem;
+    flex-direction:column;
+    justify-content: flex-start;
+  
+  }
+
+  .p {
+    font-size: 2.5rem;
+  }
+
+  .column {
+    flex-direction: column;
+    padding-right: 4.5rem;
+    width: 90%;
+    gap: 30px;
+  }
+
+  #btn1 {
+    width: 70%;
+  }
+
+  #input {
+    width: 100%;
+    height: 50px; /* Increase height for bigger inputs */
+    padding: 12px; /* Increase padding for better usability */
+    font-size: 1.2rem; /* Adjust font size for larger inputs */
+  }
+}
+
+@media (max-width: 480px) {
+  .Bgg {
+    gap: 20px;
+  }
+  .p {
+    font-size: 2rem;
+  }
+  .column {
+    flex-direction: column;
+    
+    width: 100%;
+    gap: 10px;
+    padding-left:2rem;
+  }
+  #input {
+    height: 35px;
+    width:100%;
+  }
+  #btn1 {
+    width: 80%;
+    height: 35px;
+  }
+}
+
+/* iPhone SE specific adjustments */
+@media (max-width: 375px) {
+  .Bgg {
+    gap: 10px;
+  }
+  .p {
+    font-size: 1.8rem;
+    padding-bottom:2rem;
+  }
+  .column {
+    flex-direction: column;
+    width: 100%;
+    gap: 15px;
+  }
+  #input {
+    width: 110%;
+    height: 30px;
+  }
+  #btn1 {
+    width: 90%;
+    height: 35px;
+  }
+  #message-area {
+    width:110%;
+    resize:vertical;
+  }
+}
