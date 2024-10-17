@@ -3,16 +3,16 @@ import styles from "./ContactUs.css"
 
 const ContactUs = () => {
   return (
-    <div className="background">
+    <div className="backgroundforcontactus">
       {/* division starts where the page is divided into two columns*/}
       <div className="division">
         <div>
           <p id="contactus">Contact Us</p>
         </div>
         {/* second column */}
-        <div className="secondcolumn">
-          <hr />
-          <p id="location">Bangladesh</p>
+        <div className="secondcolumnnn">
+          {/* <hr /> */}
+          {/* <p id="location">Bangladesh</p>
           <p id="address">Oasis, House 47, Road 3A, Dhanmondi, Dhaka - 1205</p>
 
           <hr />
@@ -23,11 +23,13 @@ const ContactUs = () => {
           <hr />
 
           <p id="location">Finland</p>
-          <p id="address">Helsinki, Finland 00100</p>
+          <p id="address">Helsinki, Finland 00100</p> */}
 
           <hr />
 <p id="location">Kingdom of Saudi Arabia</p>
-<p id="address">R&D Office: 7012 Al Farazdaq St, Ad Dhubbat, Riyadh 12627, Saudi Arabia</p>
+<p id="address">R&D Office: 7012 Al Farazdaq St,</p>
+<p id="address">Ad Dhubbat, Riyadh 12627, Saudi Arabia</p>
+<p id="address"></p>
 
 <hr />
           

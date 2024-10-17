@@ -1,18 +1,31 @@
+/* Navbar Styles */
 .navbar {
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
-  height: auto;
-  padding-left: 2%;
-  padding-right: 5%;
-  background: transparent;
-  z-index: 2;
+  padding: 0 2%;
+  z-index: 100;
   display: flex;
   align-items: center;
   justify-content: space-between;
+  background: transparent;
+  transition: background-color 0.3s ease-in-out, opacity 0.3s ease-in-out;
+  /* backdrop-filter: blur(6px); */
 }
 
+/* Completely invisible when scrolled past 200px */
+.invisible_navbar {
+  opacity: 0; /* Completely invisible */
+  transition: opacity 0.5s ease-in-out;
+}
+
+/* Show the navbar fully on hover */
+.invisible_navbar:hover {
+  opacity: 1;
+}
+
+/* Navbar Logo */
 .nav_logo {
   width: 150px;
   height: 60px;
@@ -25,16 +38,16 @@
   opacity: 1;
 }
 
-.navbar div {
-  display: inline-flex;
+/* Navbar Links */
+.nav_links {
+  display: flex;
+  gap: 2rem;
 }
 
-.navbar div a {
+.nav_links a {
+  display:flex;
+  align-items:center;
   padding: 40px 0 20px;
-  margin: 0 15px 20px 15px;
-  display: inline-flex;
-  align-items: center;
-  justify-content: space-between;
   font-weight: 500;
   font-size: 20px;
   color: #000;
@@ -44,7 +57,59 @@
   cursor: pointer;
 }
 
-.navbar div a:hover {
+.nav_links a:hover {
   transform: translateY(-5px);
   color: var(--ars-secondary-color);
+}
+
+.menuIcon {
+  display: none;
+}
+
+.menuIcon .active {
+  /* Add styles for active state, e.g., change color */
+  color: black; /* Example color */
+}
+
+
+/* Media Query for Small Screens (Mobile) */
+@media (max-width: 768px) {
+  .menuIcon {
+    display: block;
+    font-size: 2rem;
+    cursor: pointer;
+    color: #000;
+  }
+
+  /* Hide nav links by default */
+  .nav_links {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.9); /* Adjust background color */
+    width: 100%;
+    padding: 1rem;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+    backdrop-filter: blur(2px);
+
+  }
+
+  /* Show the menu when open */
+  .show_menu {
+    display: flex !important;
+    opacity: 1;
+  }
+
+  .nav_links a {
+    margin: 0;
+    padding: 10px 20px;
+    color: #fff;
+  }
+
+  .nav_links a:hover {
+    color: var(--ars-secondary-color);
+  }
 }

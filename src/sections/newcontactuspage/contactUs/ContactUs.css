@@ -1,4 +1,4 @@
-.background {
+.backgroundforcontactus {
     background-color: #EDF3F5;
     min-height: 100vh; /* Ensures the background covers full height even if content is short */
     font-family: "Jura", sans-serif;
@@ -10,13 +10,13 @@
 
 .division {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 250px;
+    gap: 120px;
 }
 
-.secondcolumn {
+.secondcolumnnn {
     display: flex;
     flex-direction: column;
     gap: 30px;
@@ -24,16 +24,51 @@
 
 #contactus {
     font-size: 64px;
+    font-weight:Normal;
+    
 }
 
 #location {
     font-size: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
 }
 
 #address {
     font-size: 24px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
+.iconlist{
+    display:flex;
+    flex-direction: column; 
+    gap: 25px;
+    justify-content: center;
+    align-items: center;
+
+
+
+}
+
+.iconlist li{
+    font-size: 1.2rem;
+}
+
+.iconlist li a {
+    color: black; /* Set the color to black */
+    text-decoration: none; /* Remove the underline */
+  }
+  
+  .iconlist li a:hover {
+    color: white; /* Ensure it stays black on hover */
+  }
+  
 /* Responsive for tablets and smaller screens */
 @media (max-width: 768px) {
     .background {
@@ -53,6 +88,12 @@
     #location, #address {
         font-size: 18px;
         text-align: center; /* Center the text for better alignment */
+    }
+    .iconlist {
+        flex-direction: row; /* Switch to row layout for larger screens */
+        gap: 2rem; /* Adjust gap size for larger screens */
+        text-align: center;
+        justify-items: center;
     }
 }
 
@@ -75,6 +116,11 @@
     #location, #address {
         font-size: 16px;
         text-align: center;
+    }
+    .iconlist {
+        flex-direction: row; /* Switch to row layout for larger screens */
+        gap: 2rem; /* Adjust gap size for larger screens */
+        padding-top:2rem;
     }
 }
 

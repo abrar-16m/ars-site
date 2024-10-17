@@ -1,42 +1,43 @@
-.Bgg {
+.Backgroundforchat {
   background-image: linear-gradient(to right, #1cabe280, #4f5b6680);
   min-height: 100vh; /* Ensures background covers the content */
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 12rem;
-  padding-top:3rem;
-}
-
-.p {
-  font-size: 4rem;
+  gap: 3rem;
+  padding-top: 3rem;
   font-family: "Jura", sans-serif;
-  text-align: center;
+  font-weight: normal;
 }
 
-.column {
+.firstparap {
+  font-size: 4rem;
+  text-align: center;
+  font-weight: normal; /* Add this line */
+}
+
+.Columnforchat {
   display: flex;
   flex-direction: row;
   gap: 70px;
   font-family: "Jura", sans-serif;
   width: 50%;
-  padding-bottom:2rem;
- /* Ensures vertical centering of columns */
+  padding-bottom: 2rem;
+  font-weight: normal;
 }
 
-
-.left, .right {
+.Leftforchat,
+.Rightforchat {
   flex: 1;
   display: flex;
   flex-direction: column;
   gap: 25px;
-
-  
+  font-weight: normal;
 }
 
 #message-area {
-  width: 100%; 
+  width: 100%;
   padding: 10px;
   border-radius: 4px;
   border: none;
@@ -47,8 +48,6 @@
   height: 100px; /* Initial height of the textarea */
 }
 
-
-
 #input {
   width: 100%;
   height: 35px;
@@ -57,7 +56,6 @@
   border: none;
   outline: none;
   box-shadow: 0 0 5px rgba(192, 192, 192, 0.5);
-  
 }
 
 #btn1 {
@@ -77,41 +75,24 @@
 }
 
 /* Responsive adjustments */
-@media (max-width: 1024px) {
-  .Bgg {
-    gap: 30px;
-    
-  }
-  .p {
-    font-size: 3rem;
-  }
-  .column {
+@media (max-width: 1024px) { /* Tablet */
+  .Columnforchat {
     width: 80%;
     gap: 40px;
   }
+  .firstparap {
+    font-size: 3rem;
+  }
 }
 
-@media (max-width: 768px) {
-  .Bgg {
-    gap: 30px;
-   
-    display: flex;
-    padding-top:2.5rem;
-    padding-bottom: 2.5rem;
-    flex-direction:column;
-    justify-content: flex-start;
-  
-  }
-
-  .p {
-    font-size: 2.5rem;
-  }
-
-  .column {
-    flex-direction: column;
-    padding-right: 4.5rem;
+@media (max-width: 768px) { /* Large mobile */
+  .Columnforchat {
+    flex-direction: column; /* Stack columns */
     width: 90%;
-    gap: 30px;
+  }
+
+  .firstparap {
+    font-size: 2.5rem;
   }
 
   #btn1 {
@@ -119,61 +100,59 @@
   }
 
   #input {
-    width: 100%;
     height: 50px; /* Increase height for bigger inputs */
     padding: 12px; /* Increase padding for better usability */
     font-size: 1.2rem; /* Adjust font size for larger inputs */
   }
 }
 
-@media (max-width: 480px) {
-  .Bgg {
-    gap: 20px;
-  }
-  .p {
+@media (max-width: 425px) { /* Medium mobile */
+  .firstparap {
     font-size: 2rem;
   }
-  .column {
-    flex-direction: column;
-    
+
+  .Columnforchat {
     width: 100%;
-    gap: 10px;
-    padding-left:2rem;
+    gap: 50px;
+    padding-left: 2rem;
   }
-  #input {
-    height: 35px;
-    width:100%;
-  }
+
   #btn1 {
     width: 80%;
     height: 35px;
   }
 }
 
-/* iPhone SE specific adjustments */
-@media (max-width: 375px) {
-  .Bgg {
-    gap: 10px;
-  }
-  .p {
+@media (max-width: 385px) { /* Small mobile */
+  .firstparap {
     font-size: 1.8rem;
-    padding-bottom:2rem;
   }
-  .column {
-    flex-direction: column;
-    width: 100%;
-    gap: 15px;
-  }
+
   #input {
-    width: 110%;
+    width: 80%;
     height: 30px;
   }
+
   #btn1 {
-    width: 90%;
-    height: 35px;
+    width: 80%;
   }
+
   #message-area {
-    width:110%;
-    resize:vertical;
+    width: 80%; /* Ensure message area width fits the screen */
+    resize: vertical;
+  }
+}
+
+@media (max-width: 320px) { /* Extra small mobile */
+  .firstparap {
+    font-size: 1.6rem; /* Slightly smaller for very small devices */
+  }
+
+  #input {
+    height: 30px; /* Adjust input height */
+  }
+
+  #btn1 {
+    height: 30px; /* Adjust button height */
   }
 }

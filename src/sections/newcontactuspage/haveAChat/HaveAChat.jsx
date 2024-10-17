@@ -2,17 +2,19 @@ import React from "react";
 import styles from "./HaveAChat.css";
 import { Button } from "@nextui-org/button";
 import Image from "next/image";
+import { ICONS } from "@/utils/icons";
+
 
 const HaveAChat = () => {
   return (
-    <div className="Bgg">
-      <div className="p">
-        <p>Let's Have a Chat!</p>
+    <div className="Backgroundforchat">
+      <div >
+        <p className="firstparap">Let's Have a Chat!</p>
       </div>
-      <div className="column">
+      <div className="Columnforchat">
         {/* left column starts */}
 
-        <div className="left">
+        <div className="Leftforchat">
           <p>Name</p>
           <input id="input" type="text" />
           <p>Email</p>
@@ -36,7 +38,7 @@ const HaveAChat = () => {
           </div>
         </div>
         {/* right column starts */}
-        <div className="right">
+        <div className="Rightforchat">
           <p>Surname</p>
           <input id="input" type="text" />
           <p>Name of your Company</p>
@@ -45,7 +47,16 @@ const HaveAChat = () => {
           <textarea id="message-area" rows="5"></textarea> 
           <Button id="btn1">Submit</Button>
         </div>
+        {/* icons start from here */}
+        <ul className="iconlist" style={{ listStyleType: "none"}}>
+      <li><a href="https://www.linkedin.com/company/advanced-robotics-systems/" target="_blank" rel="noopener noreferrer">{ICONS.linkedin}</a></li>
+      <li><a href="https://www.facebook.com/profile.php?id=61562469073840&mibextid=ZbWKwL" target="_blank" rel="noopener noreferrer">{ICONS.facebook}</a></li>
+      <li> <a href="https://www.instagram.com/arsystems.sa?igsh=ZTRqZ3d6NDh0eXYw" target="_blank" rel="noopener noreferrer">{ICONS.instagram}</a></li>
+      <li><a href="/" target="_blank" rel="noopener noreferrer">{ICONS.twitter}</a></li>
+    </ul>
       </div>
+    
+
     </div>
   );
 };
