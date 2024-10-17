@@ -16,19 +16,19 @@ export default function Navbar() {
   // Handle scroll behavior
   function handleScroll() {
     const currentScrollPos = window.scrollY;
+
+    // Show/hide navbar based on scroll direction
+    if (prevScrollPos > currentScrollPos) {
+      setIsNavbarVisible(true); // Scrolling up
+    } else {
+      setIsNavbarVisible(false); // Scrolling down
+    }
+
     const htmlDoc = document.documentElement;
     const percentScrolled = (htmlDoc.scrollTop / htmlDoc.clientHeight) * 100;
 
     setLogo(percentScrolled > 85); // Show/hide logo based on scroll
-
-    // Show navbar when scrolling up, hide when scrolling down
-    if (prevScrollPos > currentScrollPos) {
-      setIsNavbarVisible(true);
-    } else {
-      setIsNavbarVisible(false);
-    }
-
-    setPrevScrollPos(currentScrollPos); // Update scroll position
+    setPrevScrollPos(currentScrollPos); // Update previous scroll position
   }
 
   useEffect(() => {
@@ -42,7 +42,6 @@ export default function Navbar() {
   useEffect(() => {
     document.body.style.overflow = isMenuOpen ? "hidden" : "auto"; // Disable/enable scrolling
 
-    // Apply it globally to all pages
     return () => {
       document.body.style.overflow = "auto"; // Reset when component unmounts
     };
@@ -53,6 +52,11 @@ export default function Navbar() {
     setIsMenuOpen((prevState) => !prevState);
   };
 
+  // Function to handle link clicks to close the menu
+  const handleLinkClick = () => {
+    setIsMenuOpen(false); // Close the menu when a link is clicked
+  };
+
   return (
     <nav className={`${styles.navbar} ${isNavbarVisible ? "" : styles.invisible_navbar}`}>
       <span className={`${styles.nav_logo} ${logo ? styles.show_logo : ""}`}>
@@ -60,17 +64,17 @@ export default function Navbar() {
       </span>
 
       {/* Hamburger Menu Toggle for Mobile */}
-      <div className={styles.menuIcon} onClick={toggleMenu}>
-        <FaBars className={`${isMenuOpen ? styles.active : ""}`} /> {/* Only one icon will display */}
+      <div className={`${styles.menuIcon} ${isNavbarVisible ? "" : styles.hidden}`} onClick={toggleMenu}>
+        <FaBars className={`${isMenuOpen ? styles.active : ""}`} />
       </div>
 
       {/* Navbar Links */}
       <div className={`${styles.nav_links} ${isMenuOpen ? styles.show_menu : ""}`}>
-        <Link href="/#home">Home</Link>
-        <Link href="/#products">Products</Link>
-        <Link href="/#news">News</Link>
-        <Link href="/#about">About</Link>
-        <Link href="/newcontact">
+        <Link href="/#home" onClick={handleLinkClick}>Home</Link>
+        <Link href="/#products" onClick={handleLinkClick}>Products</Link>
+        <Link href="/#news" onClick={handleLinkClick}>News</Link>
+        <Link href="/#about" onClick={handleLinkClick}>About</Link>
+        <Link href="/newcontact" onClick={handleLinkClick}>
           Contact <FaArrowRight className="btn-arrow" />
         </Link>
       </div>
