@@ -58,7 +58,7 @@
 }
 
 .nav_links a:hover {
-  transform: translateY(-5px);
+  transform: transform(-5px);
   color: var(--ars-secondary-color);
 }
 
