@@ -36,7 +36,7 @@ export default function Navbar() {
     return () => {
       window.removeEventListener("scroll", handleScroll);
     };
-  }, [prevScrollPos]);
+  }, [prevScrollPos, handleScroll]);
 
   // Toggle body scroll based on the menu state
   useEffect(() => {

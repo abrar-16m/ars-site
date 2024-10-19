@@ -13,7 +13,8 @@ const footer = () => {
     {/* First column */}
     <div className="firstcolumn">
       
-    <img src="/assets/ARS_1_Grey_cropped.png"  alt="Captcha"/>
+    <Image    width={200}  
+        height={90} src="/assets/ARS_1_Grey_cropped.png"  alt="Captcha"/>
     {/* check whether the next paragraph should change or not */}
     {/* <p>We make your dreams realize</p> */}
 

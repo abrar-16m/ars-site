@@ -129,11 +129,13 @@ ul {
   .leftcolumn,
   .rightcolumn {
     width: 100%;
+    align-items: center;
   }
 
   .secondcolumn {
     gap: 5.5rem;
     flex-direction: row;
+    
   }
 
   .bottomfooter {
