@@ -99,7 +99,21 @@ ul {
     gap: 40rem;
   }
 }
+@media (max-width: 880px) {
+  .maincolumn {
+    flex-direction: row;
+    gap: 15rem;
+    padding-top: 80px;
+  }
 
+  .bottomfooter {
+    flex-direction: row;
+    gap: 22rem;
+  }
+
+  .footerlist {
+  }
+}
 /* For screens 768px and below */
 @media (max-width: 778px) {
   .maincolumn {
@@ -114,6 +128,37 @@ ul {
   }
 
   .footerlist {
+  }
+}
+/*  */
+@media (max-width: 686px) {
+  .maincolumn {
+    flex-direction: column;
+    gap: 2rem;
+    padding-top: 50px;
+  }
+
+  .firstcolumn,
+  .leftcolumn,
+  .rightcolumn {
+    width: 100%;
+    align-items: center;
+  }
+
+  .secondcolumn {
+    gap: 5.5rem;
+    flex-direction: row;
+    
+  }
+
+  .bottomfooter {
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+  }
+
+  .footerlist {
+    flex-direction: row;
   }
 }
 
