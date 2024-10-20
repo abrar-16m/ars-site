@@ -15,7 +15,6 @@ export default function Home() {
         <HowItWorks />
         <News />
         <About />
-        <Contact />
       </div>
     </>
   );
