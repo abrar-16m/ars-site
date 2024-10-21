@@ -9,6 +9,7 @@
   align-items: center;
   font-family: "Jura", sans-serif;
   color: white;
+  overflow: hidden;
 }
 
 /* Main Column */
@@ -41,7 +42,8 @@
   gap: 50px;
 }
 
-#Menu, #Contactcaption {
+#Menu,
+#Contactcaption {
   font-family: "Kodchasan";
 }
 
@@ -148,7 +150,6 @@ ul {
   .secondcolumn {
     gap: 5.5rem;
     flex-direction: row;
-    
   }
 
   .bottomfooter {
@@ -180,7 +181,6 @@ ul {
   .secondcolumn {
     gap: 5.5rem;
     flex-direction: row;
-    
   }
 
   .bottomfooter {
@@ -196,7 +196,6 @@ ul {
 
 /* For screens 375px and below */
 @media (max-width: 385px) {
-  
   .maincolumn {
     gap: 1.5rem;
     padding-top: 40px;
@@ -207,13 +206,11 @@ ul {
   .rightcolumn {
     width: 100%;
     text-align: center;
-    
   }
 
   .secondcolumn {
     gap: 1rem;
-    flex-direction:row;
-
+    flex-direction: row;
   }
 
   .footerlist {
@@ -224,12 +221,8 @@ ul {
 
 /* For screens 320px and below */
 @media (max-width: 320px) {
-
-  
   .maincolumn {
     gap: 3rem;
-    
-   
   }
 
   .firstcolumn,
@@ -237,8 +230,6 @@ ul {
   .rightcolumn {
     width: 100%;
     text-align: center;
-    
-    
   }
 
   .footerlist {
