@@ -1,0 +1,247 @@
+/* General Footer Styles */
+.backgroundforfooter {
+  background-color: #012533;
+  padding-bottom: 100px;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  font-family: "Jura", sans-serif;
+  color: white;
+}
+
+/* Main Column */
+.maincolumn {
+  display: flex;
+  justify-content: center;
+  gap: 40rem; /* Large gap for bigger screens */
+  text-align: center;
+  padding-top: 120px;
+}
+
+/* First, Left, and Right Columns */
+.firstcolumn,
+.leftcolumn,
+.rightcolumn {
+  flex: 1;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+.firstcolumn {
+  max-width: 300px;
+}
+
+.secondcolumn {
+  display: flex;
+  justify-content: space-between;
+  gap: 50px;
+}
+
+#Menu, #Contactcaption {
+  font-family: "Kodchasan";
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  font-family: "Roboto Mono";
+  font-weight: 300;
+}
+
+.leftcolumn ul,
+.rightcolumn ul {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+/* Bottom Footer */
+.bottomfooter {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 55rem; /* Large gap for desktop */
+}
+
+#bottomfooterline {
+  color: #21aae2;
+}
+
+.footerlist {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+}
+
+.footerlist li a {
+  color: white;
+  text-decoration: none;
+}
+
+.footerlist li a:hover {
+  color: black;
+}
+
+/* Media Queries */
+
+/* For screens 1024px and below */
+@media (max-width: 1024px) {
+  .maincolumn {
+    gap: 30rem;
+    padding-top: 80px;
+  }
+
+  .bottomfooter {
+    gap: 40rem;
+  }
+}
+@media (max-width: 880px) {
+  .maincolumn {
+    flex-direction: row;
+    gap: 15rem;
+    padding-top: 80px;
+  }
+
+  .bottomfooter {
+    flex-direction: row;
+    gap: 22rem;
+  }
+
+  .footerlist {
+  }
+}
+/* For screens 768px and below */
+@media (max-width: 778px) {
+  .maincolumn {
+    flex-direction: row;
+    gap: 15rem;
+    padding-top: 80px;
+  }
+
+  .bottomfooter {
+    flex-direction: row;
+    gap: 22rem;
+  }
+
+  .footerlist {
+  }
+}
+/*  */
+@media (max-width: 686px) {
+  .maincolumn {
+    flex-direction: column;
+    gap: 2rem;
+    padding-top: 50px;
+  }
+
+  .firstcolumn,
+  .leftcolumn,
+  .rightcolumn {
+    width: 100%;
+    align-items: center;
+  }
+
+  .secondcolumn {
+    gap: 5.5rem;
+    flex-direction: row;
+    
+  }
+
+  .bottomfooter {
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+  }
+
+  .footerlist {
+    flex-direction: row;
+  }
+}
+
+/* For screens 425px and below */
+@media (max-width: 435px) {
+  .maincolumn {
+    flex-direction: column;
+    gap: 2rem;
+    padding-top: 50px;
+  }
+
+  .firstcolumn,
+  .leftcolumn,
+  .rightcolumn {
+    width: 100%;
+    align-items: center;
+  }
+
+  .secondcolumn {
+    gap: 5.5rem;
+    flex-direction: row;
+    
+  }
+
+  .bottomfooter {
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+  }
+
+  .footerlist {
+    flex-direction: row;
+  }
+}
+
+/* For screens 375px and below */
+@media (max-width: 385px) {
+  
+  .maincolumn {
+    gap: 1.5rem;
+    padding-top: 40px;
+  }
+
+  .firstcolumn,
+  .leftcolumn,
+  .rightcolumn {
+    width: 100%;
+    text-align: center;
+    
+  }
+
+  .secondcolumn {
+    gap: 1rem;
+    flex-direction:row;
+
+  }
+
+  .footerlist {
+    flex-direction: row;
+    gap: 2rem;
+  }
+}
+
+/* For screens 320px and below */
+@media (max-width: 320px) {
+
+  
+  .maincolumn {
+    gap: 3rem;
+    
+   
+  }
+
+  .firstcolumn,
+  .leftcolumn,
+  .rightcolumn {
+    width: 100%;
+    text-align: center;
+    
+    
+  }
+
+  .footerlist {
+    flex-direction: row;
+  }
+}
