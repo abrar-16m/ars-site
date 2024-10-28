@@ -103,3 +103,152 @@
   width: 2px;
   height: 100%;
 }
+
+@media(max-width:768px){
+
+  .about_who {
+height:40%;  }
+
+  .about_who h1{
+    font-size:20px;
+  }
+  .about_who h3{
+    font-size:20px;
+  }
+  .about_who p{
+    font-size:12px;
+  }
+
+  .about_partner{
+    height:40%;
+  }
+  .about_partner h1{
+    font-size: 20px;
+  }
+  .line{
+    height:90%;
+  }
+  .partner_image div{
+    width:60%;
+   
+  }
+}
+
+@media(max-width:632px){
+
+  .about_who {
+height:40%;  }
+
+  .about_who h1{
+    font-size:18px;
+  }
+  .about_who h3{
+    font-size:18px;
+  }
+  .about_who p{
+    font-size:9px;
+  }
+
+  .about_partner{
+    height:40%;
+  }
+  .about_partner h1{
+    font-size: 15px;
+  }
+  .line{
+    height:90%;
+  }
+  .partner_image div{
+    width:60%;
+   
+  }
+}
+
+@media(max-width:426px){
+
+  .about_who {
+height:40%;  }
+
+  .about_who h1{
+    font-size:18px;
+  }
+  .about_who h3{
+    font-size:18px;
+  }
+  .about_who p{
+    font-size:9px;
+  }
+
+  .about_partner{
+    height:40%;
+  }
+  .about_partner h1{
+    font-size: 15px;
+  }
+  .line{
+    height:90%;
+  }
+  .partner_image div{
+    width:60%;
+   
+  }
+}
+
+@media(max-width:376px){
+
+  .about_who {
+height:40%;  }
+
+  .about_who h1{
+    font-size:18px;
+  }
+  .about_who h3{
+    font-size:18px;
+  }
+  .about_who p{
+    font-size:9px;
+  }
+
+  .about_partner{
+    height:40%;
+  }
+  .about_partner h1{
+    font-size: 15px;
+  }
+  .line{
+    height:90%;
+  }
+  .partner_image div{
+    width:60%;
+   
+  }
+}
+@media(max-width:320px){
+
+  .about_who {
+height:40%;  }
+
+  .about_who h1{
+    font-size:17px;
+  }
+  .about_who h3{
+    font-size:17px;
+  }
+  .about_who p{
+    font-size:8px;
+  }
+
+  .about_partner{
+    height:40%;
+  }
+  .about_partner h1{
+    font-size: 15px;
+  }
+  .line{
+    height:90%;
+  }
+  .partner_image div{
+    width:60%;
+   
+  }
+}

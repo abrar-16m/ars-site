@@ -74,6 +74,7 @@
   font-size: 20px;
 }
 
+
 .how_right {
   flex-basis: 48%;
 }
@@ -91,4 +92,54 @@
   height: calc(80% * 0.42);
   width: 80%;
   transition: all 0.3s ease-in-out;
+}
+
+@media (max-width:768px){
+  .how_container{
+    display:flex;
+    flex-direction:column;
+  }
+
+  .how_left div h3{
+    font-size:22px;
+  }
+
+  .how_left div h1{
+    font-size:27px;
+  }
+  .how_left div p{
+    font-size:17px;
+  }
+
+  .amr_name{
+    font-size:2rem;
+  }
+
+  
+}
+
+@media (max-width:426px){
+  .how_container{
+    display:flex;
+    flex-direction:column;
+  }
+
+  .how_left div h3{
+    font-size:19px;
+  }
+
+  .how_left div h1{
+    font-size:22px;
+  }
+  .how_left div p {
+    font-size: 16px;
+    text-align: justify; /* Centers the text */
+    padding: 0 10%; /* Adds space on the left and right */
+    margin: 0 auto; /* Centers the paragraph within the container if needed */
+  }
+
+  .amr_name{
+    font-size:2rem;
+  }
+  
 }
