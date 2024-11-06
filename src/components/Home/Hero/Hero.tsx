@@ -19,6 +19,8 @@ export default function Hero() {
           </div>
         </a>
       </div>
+      {/* middle div to make it a column */}
+ 
       <div className={styles.hero_left}>
         <div>
           <Image className="image" src={ars_logo} alt="ARS Logo" fill />
@@ -38,7 +40,9 @@ export default function Hero() {
             Next <FaArrowRightLong className="btn-arrow" />
           </button>
         </NextLink>
-      </div>
-    </div>
+        </div>
+        </div>
+  
+    
   );
 }

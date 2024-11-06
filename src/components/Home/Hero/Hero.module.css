@@ -4,7 +4,7 @@
   grid-template-rows: 70% 1fr;
   grid-template-columns: 60% 1fr;
   position: relative;
-  /* scroll-snap-align: start; */
+  overflow: hidden;
 }
 
 .vision_div {
@@ -67,4 +67,63 @@
   height: 1px;
   width: 202px;
   margin-top: 20px;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .hero {
+    grid-template-rows: auto auto auto; /* Change to three rows for mobile */
+    grid-template-columns: 100%; /* Single column layout */
+  }
+
+  .hero_left {
+    grid-area: 1; /* Place in first row */
+    justify-content: center; /* Center content */
+  }
+
+  .hero_right {
+    grid-area: 2; /* Place in second row */
+    align-items: center; /* Center content */
+    justify-content: center; /* Center content */
+  }
+
+  .hero_bottom {
+    grid-area: 3; /* Place in third row */
+  }
+
+  .hero_left{
+    padding-top:5rem;
+  }
+
+  .hero_left div {
+    width: 100%; /* Full width for smaller screens */
+    height:70%;
+    margin-top: 0; /* Reset margin */
+  }
+
+  .hero_right h1 {
+    font-size: 28px; /* Adjust font size for readability */
+    padding: 0; /* Remove padding */
+    text-align: center; /* Center the text */
+  }
+
+  .vision_div {
+    top: 10px; /* Adjust positioning for smaller screens */
+    left: 20px; /* Adjust left positioning */
+  }
+}
+
+@media (max-width: 480px) {
+
+  .hero_left{
+    padding-top:5rem;
+  }
+  .hero_right h1 {
+    
+    font-size: 20px; /* Smaller font size */
+  }
+
+  .line {
+    width: 150px; /* Adjust line width */
+  }
 }

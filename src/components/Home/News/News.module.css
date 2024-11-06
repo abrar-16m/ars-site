@@ -3,7 +3,6 @@
   flex-direction: column;
   align-items: center;
   min-height: 100vh;
-  /* scroll-snap-align: start; */
 }
 
 .placeholder {
@@ -27,11 +26,11 @@
 .news_content {
   width: 100%;
   height: 85vh;
-  padding-left: 10%;
-  padding-right: 10%;
+  padding: 0 10%;
   display: flex;
   align-items: center;
   justify-content: space-evenly;
+  flex-wrap: wrap;
 }
 
 .card {
@@ -43,6 +42,7 @@
   flex-direction: column;
   align-items: center;
   transition: all 0.3s ease-in-out;
+  margin: 10px;
 }
 
 .card_image {
@@ -56,8 +56,7 @@
 .card_content {
   width: 100%;
   height: 60%;
-  padding-left: 2.5%;
-  padding-right: 2.5%;
+  padding: 0 2.5%;
   border-bottom-right-radius: 10px;
   border-bottom-left-radius: 10px;
 }
@@ -66,4 +65,108 @@
   color: var(--ars-primary-color);
   text-align: justify;
   font-size: 15px;
+}
+
+/* Responsive styles */
+
+@media (max-width: 1025px) {
+  .news_header span {
+    font-size: 35px;
+  }
+
+  .news_content {
+    flex-direction: column;
+    padding:20px 0 20px 0;
+  }
+
+  .card {
+    flex-basis: 100%;
+    width:60%;
+  }
+}
+@media (max-width: 768px) {
+  .news_header span {
+    font-size: 35px;
+  }
+
+  .news_content {
+    flex-direction: column;
+    padding:20px 0 20px 0;
+  }
+
+  .card {
+    flex-basis: 100%;
+    width:80%;
+  }
+}
+
+/* size to consider since everytime i am increasing the resolution the design becomes unresponsive in this range */
+
+@media (max-width: 631px) {
+
+
+  .news_header span {
+    font-size: 28px;
+  }
+
+  .news_content {
+    padding:  3%;
+  }
+
+  .card {
+    width: 80%;
+    overflow:hidden;
+
+  }
+
+  .card_content p {
+    font-size: 10px;
+  }
+}
+
+
+@media (max-width: 426px) {
+
+
+  .news_header span {
+    font-size: 28px;
+  }
+
+  .news_content {
+    padding:  3%;
+  }
+
+  .card {
+    width: 80%;
+    overflow:hidden;
+
+  }
+
+  .card_content p {
+    font-size: 10px;
+  }
+}
+
+@media (max-width: 320px) {
+  .news_header {
+    height: 10vh;
+  }
+
+  .news_header span {
+    font-size: 24px;
+  }
+
+  .news_content {
+    padding: 0 2%;
+  }
+
+  .card_content p {
+    font-size: 11px;
+
+  }
+  .card{
+    width:80%;
+    min-height:300px;
+    overflow:scroll;
+    }
 }

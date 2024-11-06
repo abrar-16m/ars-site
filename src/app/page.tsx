@@ -5,6 +5,8 @@ import HowItWorks from "@/components/Home/HowItWorks/HowItWorks";
 import News from "@/components/Home/News/News";
 import Contact from "@/components/Home/Contact/Contact";
 import Navbar from "@/components/Navbar/Navbar";
+import Footer from "@/sections/footer/Footer";
+
 
 export default function Home() {
   return (
@@ -15,6 +17,7 @@ export default function Home() {
         <HowItWorks />
         <News />
         <About />
+        <Footer/>
       </div>
     </>
   );
