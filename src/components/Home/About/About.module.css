@@ -150,21 +150,40 @@ height:40%;  }
   }
 
   .about_partner{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
     height:40%;
   }
   .about_partner h1{
-    font-size: 15px;
+    padding-top:3rem;
+    font-size: 22px;
   }
   .line{
-    height:90%;
+    width: 400px; /* Adjust this to make the line as long as you want */
+    height: 2px; /* This keeps the line thin */
   }
   .partner_image div{
-    width:60%;
-   
+    width:75%;
+    align-items:center;
+    margin-top:25px;
+    height:100%;
+    
   }
 }
 
-@media(max-width:426px){
+@media(max-width:526px){
+  .line{
+    width: 330px; /* Adjust this to make the line as long as you want */
+    height: 2px; /* This keeps the line thin */
+    margin-bottom: 0.5rem;
+  } 
+
+}
+
+
+
+@media(max-width:461px){
 
   .about_who {
 height:40%;  }
@@ -180,17 +199,26 @@ height:40%;  }
   }
 
   .about_partner{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
     height:40%;
   }
   .about_partner h1{
-    font-size: 15px;
+    padding-top:3.5rem;
+    font-size: 18px;
   }
   .line{
-    height:90%;
+    width: 270px; /* Adjust this to make the line as long as you want */
+    height: 2px; /* This keeps the line thin */
+    margin-bottom: 0.5rem;
   }
   .partner_image div{
-    width:60%;
-   
+    width:75%;
+    align-items:center;
+    margin-top:25px;
+    height:105%;
+    
   }
 }
 
@@ -210,22 +238,32 @@ height:40%;  }
   }
 
   .about_partner{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
     height:40%;
   }
   .about_partner h1{
+    padding-top:3.5rem;
     font-size: 15px;
   }
   .line{
-    height:90%;
+    width: 230px; /* Adjust this to make the line as long as you want */
+    height: 2px; /* This keeps the line thin */
   }
   .partner_image div{
-    width:60%;
-   
+    width:75%;
+    align-items:center;
+    margin-top:25px;
+    height:90%;
+    
   }
+
 }
-@media(max-width:320px){
+@media(max-width:321px){
 
   .about_who {
+    
 height:40%;  }
 
   .about_who h1{
@@ -239,16 +277,24 @@ height:40%;  }
   }
 
   .about_partner{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
     height:40%;
   }
   .about_partner h1{
+    padding-top:3.5rem;
     font-size: 15px;
   }
   .line{
-    height:90%;
+    width: 200px; /* Adjust this to make the line as long as you want */
+    height: 2px; /* This keeps the line thin */
   }
   .partner_image div{
-    width:60%;
-   
+    width:75%;
+    align-items:center;
+    margin-top:25px;
+    height:80%;
+    
   }
 }

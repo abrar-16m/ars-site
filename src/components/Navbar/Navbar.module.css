@@ -78,7 +78,18 @@
     font-size: 2rem;
     cursor: pointer;
     color: #000;
+    z-index:1;
+
   }
+
+  .nav_logo {
+    width: 80px;
+    height: 55px;
+    position: relative;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+  }
+
 
   /* Hide nav links by default */
   .nav_links {
@@ -86,7 +97,7 @@
     flex-direction: column;
     position: absolute;
     top: 100%;
-    left: 0;
+    right: 0;
     background-color: rgba(0, 0, 0, 0.9); /* Adjust background color */
     width: 100%;
     padding: 1rem;
@@ -100,12 +111,24 @@
   .show_menu {
     display: flex !important;
     opacity: 1;
+    backdrop-filter: blur(50px);
+    background-color: rgba(0, 0, 0, 0);
+  
+    /* Fullscreen styling */
+    position: fixed;
+    top: 0;
+    right: 0; /* Align to the right */
+    width: 100vw; /* Full viewport width */
+    height: 100vh; /* Full viewport height */
+    align-items: center; /* Keep it vertically centered */
+    justify-content: center; /* Align content to the right */
   }
 
   .nav_links a {
     margin: 0;
     padding: 10px 20px;
-    color: #fff;
+    color: black; 
+    
   }
 
   .nav_links a:hover {

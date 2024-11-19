@@ -1,0 +1,185 @@
+.Bg {
+    position: relative;
+    /* background: radial-gradient(circle, rgba(2, 18, 25, 0.8) 0%, rgba(79, 91, 102, 0.8) 100%);     */
+
+
+
+    background-image: url("/assets/bg_contactus.jpeg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Jura", sans-serif;
+}
+
+.Bg::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.6 ); /* White overlay with 70% opacity */
+    z-index: 1; /* Ensures the overlay stays above the background */
+}
+
+.Bg-content {
+    position: relative;
+    z-index: 2; /* Ensures content appears on top of the overlay */
+    color: black; /* Adjust content color if needed */
+}
+
+#btn{
+    z-index:0;
+}
+
+.container{
+    background-color:#012533;
+
+    border:5px #012533;
+    width:30%;
+    height:35%; 
+    display:flex;
+    justify-content:center;
+    align-items: center;
+    border-radius: 5px;
+    z-index:2;
+
+}
+
+@media (max-width: 1024px) {
+    .container {
+        width: 40%; /* More compact for small screens */
+        height: 40%;
+        padding: 8px; /* Reduce padding further */
+    }
+
+    #Project {
+        font-size: 1.5em; /* Smaller font size for 425px screens */
+    }
+
+    #btn {
+        width: 85px; /* Smaller button size */
+        height: 22px;
+    }
+}
+
+@media (max-width: 768px) {
+
+    .bg{
+        background-size: contain;
+    }
+    .container {
+        width: 50%; /* Wider on smaller screens */
+        height: 40%; /* Allow height to adjust based on content */
+    }
+}
+
+@media (max-width: 540px) {
+    .container {
+        width: 65%; /* Even wider on very small screens */
+        height: 35%; /* Allow height to adjust based on content */
+        padding: 10px; /* Reduce padding */
+    }
+}
+
+.App{
+    color:white;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items: center;
+    gap:30px;
+
+}
+
+#Project{
+    font-size: 2.0em;
+}
+
+#second{
+
+}
+
+#btn{
+    width:110px;
+    height:30px;
+    border-radius: 5px;
+    color:black;
+    font-family:"Jura", "sans-serif";
+    font-weight: bold;
+ 
+
+}
+
+#btn:hover{
+    background-color:#4c4efd;
+}
+
+/* Small Screens (up to 425px) */
+@media (max-width: 425px) {
+    .container {
+        width: 80%; /* More compact for small screens */
+        height: 35%;
+        padding: 8px; /* Reduce padding further */
+    }
+
+    #Project {
+        font-size: 1.5em; /* Smaller font size for 425px screens */
+    }
+
+    #btn {
+        width: 85px; /* Smaller button size */
+        height: 22px;
+    }
+}
+
+/* Extra Small Screens (up to 320px) */
+@media (max-width: 320px) {
+    .container {
+        width: 77%; /* Maximize width on very small screens */
+        height: 35%;
+        padding: 5px; /* Minimal padding for extra small screens */
+    }
+
+    #Project {
+        font-size: 1.2em; /* Further reduce font size for tiny screens */
+    }
+
+    #btn {
+        width: 75px; /* Tiny button for very small screens */
+        height: 20px;
+    }
+}
+
+.App {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+/* Default styles for larger screens */
+#Project {
+    font-size: 2.0em;
+}
+
+#btn {
+    width: 110px;
+    height: 30px;
+    border-radius: 5px;
+    color: black;
+    font-family: "Jura", "sans-serif";
+    font-weight: bold;
+}
+
+#btn:hover {
+    background-color: #4c4efd;
+}
+
