@@ -1,7 +1,7 @@
 import React from "react";
-import Create from "@/sections/newcontactuspage/create/Create";
-import HaveAChat from "@/sections/newcontactuspage/haveAChat/HaveAChat";
-import ContactUs from "@/sections/newcontactuspage/contactUs/ContactUs";
+import Create from "@/sections/contactus/create/Create";
+import HaveAChat from "@/sections/contactus/haveAChat/HaveAChat";
+import ContactUs from "@/sections/contactus/contactUs/ContactUs";
 import Footer from "@/sections/footer/Footer";
 
 const page = () => {
