@@ -45,7 +45,7 @@ const footer = () => {
 
         {/* Bottom footer with icons */}
         <div className="bottomfooter">
-          <p id="bottomfooterline">2023 LOGOAGENCY. ALL RIGHTS RESERVED.</p>
+          <p id="bottomfooterline">2024 ARS. ALL RIGHTS RESERVED.</p>
           <ul className="footerlist" style={{ listStyleType: "none" }}>
             <li>
               <a
