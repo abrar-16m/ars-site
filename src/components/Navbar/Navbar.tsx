@@ -74,7 +74,7 @@ export default function Navbar() {
         <Link href="/#products" onClick={handleLinkClick}>Products</Link>
         <Link href="/#news" onClick={handleLinkClick}>News</Link>
         <Link href="/#about" onClick={handleLinkClick}>About</Link>
-        <Link href="/newcontact" onClick={handleLinkClick}>
+        <Link href="/contact" onClick={handleLinkClick}>
           Contact <FaArrowRight className="btn-arrow" />
         </Link>
       </div>
