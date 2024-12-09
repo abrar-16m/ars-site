@@ -2,6 +2,8 @@ import React from "react";
 import "./Footer.css";
 import { ICONS } from "@/utils/icons";
 import Image from "next/image";
+import Link from "next/link";
+
 
 const footer = () => {
   return (
@@ -36,7 +38,7 @@ const footer = () => {
             <div className="rightcolumn">
               <p id="Contactcaption">Contact</p>
               <ul>
-                <li>Contact Us</li>
+                <li><Link href="/contact">Contact Us</Link></li>
                 <li>News</li>
               </ul>
             </div>
